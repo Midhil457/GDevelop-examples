@@ -15,7 +15,7 @@
     "scaleMode": "nearest",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
-    "version": "1.0.1",
+    "version": "1.0.0",
     "name": "Rhythm a musical game",
     "author": "Ulises Freitas",
     "windowWidth": 320,
@@ -2517,7 +2517,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "WTF Wars Rhythm Edition:\nVersion: 1.0.1\nAuthor: Ulises Freitas<ulises.freitas@gmail.com>\nWeb: https://github.com/UlisesFreitas/WTF-Wars-Rhythm\n\nWelcome to World Trade Fun Wars series this time Rhythm Edition - A very simple music game\nControls:\nAWSD for player 1\nLEFT,RIGHT,UP,DOWN for player 2\nEnter for start the game\nR - Restart anytime\n\nAlmost all the variables of the game are defined in the GameScene as an structure variable so it's easy to understand\nAll the objects are separated in tags so it's easy to filter not relevant for this example but if you plan a bigger game based on this template well is already there for you to easily add more objects.\n\nLayers:\nBase Layer Almost all the objects are placed here exept for the texts.\nHud - Some texts here\nGameover: The game over objects WinLose",
+          "comment": "Version: 1.0.0\nAuthor: Ulises Freitas<ulises.freitas@gmail.com>\nWeb: https://github.com/UlisesFreitas/WTF-Wars-Rhythm\n\nWelcome to World Trade Fun Wars series this time Rhythm Edition - A very simple music game\nControls:\nAWSD for player 1\nLEFT,RIGHT,UP,DOWN for player 2\nEnter for start the game\nR - Restart anytime\n\nAlmost all the variables of the game are defined in the GameScene as an structure variable so it's easy to understand\nAll the objects are separated in tags so it's easy to filter not relevant for this example but if you plan a bigger game based on this template well is already there for you to easily add more objects.\n\nLayers:\nBase Layer Almost all the objects are placed here exept for the texts.\nHud - Some texts here\nGameover: The game over objects WinLose",
           "comment2": ""
         },
         {
