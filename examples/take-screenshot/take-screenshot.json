@@ -11,13 +11,14 @@
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
+    "pixelsRounding": false,
     "projectUuid": "2e744ff3-e6ac-402a-ba67-31d66686f7ab",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useDeprecatedZeroAsDefaultZOrder": true,
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
-    "name": "Project",
+    "version": "1.0.1",
+    "name": "Take Screenshot",
     "author": "",
     "windowWidth": 800,
     "windowHeight": 600,
@@ -27,7 +28,20 @@
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "showGDevelopSplash": true
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
     },
     "extensionProperties": [],
     "platforms": [
@@ -76,8 +90,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "NewScene",
-      "name": "NewScene",
+      "mangledName": "Game",
+      "name": "Game",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -88,17 +102,16 @@
       "v": 209,
       "uiSettings": {
         "grid": false,
-        "gridB": 255,
-        "gridG": 180,
+        "gridType": "rectangular",
+        "gridWidth": 32,
         "gridHeight": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
-        "gridR": 158,
-        "gridType": "rectangular",
-        "gridWidth": 32,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
         "snap": true,
-        "windowMask": false,
-        "zoomFactor": 1
+        "zoomFactor": 1,
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
@@ -332,6 +345,17 @@
                 "ScreenshotPath"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::SetTextAlignment"
+              },
+              "parameters": [
+                "ScreenshotPath",
+                "\"center\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -389,7 +413,7 @@
               },
               "parameters": [
                 "",
-                "FileSystem::DesktopPath() + FileSystem::PathDelimiter() + \"GDevelop_Screenshot.png\""
+                "FileSystem::PicturesPath()+ FileSystem::PathDelimiter() + \"GDevelop_Screenshot.png\""
               ],
               "subInstructions": []
             }
@@ -409,7 +433,7 @@
                   "parameters": [
                     "ScreenshotPath",
                     "=",
-                    "\"Screenshot saved at: \" + NewLine() + FileSystem::DesktopPath() + FileSystem::PathDelimiter() + \"GDevelop_Screenshot.png\""
+                    "\"Screenshot saved at: \" + NewLine() + FileSystem::PicturesPath()+ FileSystem::PathDelimiter() + \"GDevelop_Screenshot.png\""
                   ],
                   "subInstructions": []
                 },
