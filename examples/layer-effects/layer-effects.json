@@ -16,7 +16,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptHeight",
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Layer Effects",
     "author": "The Gem Dev",
     "windowWidth": 1000,
